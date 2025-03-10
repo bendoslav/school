@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-gray-50">
+    <header class="fixed w-full top-0 z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <img src="school-logo.png" alt="School Logo" class="h-10 w-auto">
+                    <span class="text-xl font-bold text-gray-800">School Name</span>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="p-2 focus:outline-none">
+                        <div class="w-6 h-0.5 bg-gray-600 mb-1.5 transition-all"></div>
+                        <div class="w-6 h-0.5 bg-gray-600 mb-1.5 transition-all"></div>
+                        <div class="w-6 h-0.5 bg-gray-600 transition-all"></div>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex items-center space-x-6">
+                    <li><a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a></li>
+                    <li><a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a></li>
+                    <li><a href="#programs" class="text-gray-600 hover:text-blue-600 transition-colors">Programs</a>
+                    </li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a></li>
+                    <li><a href="#login" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="relative min-h-screen flex items-center pt-16">
+            <!-- Průmyslový obrázek jako pozadí -->
+            <img src="industrial-background.jpg" alt="Průmyslový areál" class="absolute inset-0 w-full h-full object-cover object-center z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-10"></div>
+            
+            <div class="container mx-auto px-4 relative z-20">
+                <div class="max-w-3xl">
+                    <h1 class="text-5xl md:text-6xl font-bold text-white mb-2">
+                        Vítkovická <span class="relative inline-block">
+                            <span class="text-blue-400">střední průmyslová</span>
+                            <span class="absolute -bottom-2 left-0 w-full h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full transform -rotate-1"></span>
+                        </span> škola
+                    </h1>
+                    
+                    <!-- Odstraněno původní podtržení -->
+                    
+                    <p class="text-xl text-gray-200 mb-8 max-w-2xl mt-10">
+                        Informace k zahájení školního roku 2024/2025. Připravujeme studenty na budoucnost v technických oborech s důrazem na praktické dovednosti a moderní technologie. Naše škola nabízí kvalitní vzdělání s dlouholetou tradicí.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all transform hover:-translate-y-1 flex items-center">
+                            Číst dále <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigační šipky odstraněny -->
+            
+            <!-- Vylepšené statistiky -->
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-blue-900/90 to-blue-800/90 py-8 z-20">
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="flex flex-col items-center border-r border-blue-700 last:border-0">
+                            <span class="text-5xl font-bold text-white mb-2">30<span class="text-blue-400">+</span></span>
+                            <div class="h-1 w-12 bg-blue-400 rounded-full mb-3"></div>
+                            <p class="text-white/90 uppercase tracking-wider text-sm font-medium">Let zkušeností</p>
+                        </div>
+                        <div class="flex flex-col items-center border-r border-blue-700 last:border-0">
+                            <span class="text-5xl font-bold text-white mb-2">15<span class="text-blue-400">+</span></span>
+                            <div class="h-1 w-12 bg-blue-400 rounded-full mb-3"></div>
+                            <p class="text-white/90 uppercase tracking-wider text-sm font-medium">Studijních oborů</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-5xl font-bold text-white mb-2">98<span class="text-blue-400">%</span></span>
+                            <div class="h-1 w-12 bg-blue-400 rounded-full mb-3"></div>
+                            <p class="text-white/90 uppercase tracking-wider text-sm font-medium">Uplatnění absolventů</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nahraďte sekci features touto sekcí pro obory -->
+        <section id="programs" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Naše studijní obory</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="program-card bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 transform" data-program-id="it">
+                        <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-laptop-code text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Informační technologie</h3>
+                        <p class="text-gray-600 mb-6 text-center">Programování, správa sítí a vývoj webových aplikací</p>
+                        <ul class="text-gray-600 mb-6 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Programování v různých jazycích</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Správa počítačových sítí</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Tvorba webových aplikací</li>
+                        </ul>
+                        <button class="more-info-btn w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg transition-colors">
+                            Více informací
+                        </button>
+                    </div>
+                    
+                    <div class="program-card bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 transform" data-program-id="economics">
+                        <div class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-chart-line text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Ekonomika a podnikání</h3>
+                        <p class="text-gray-600 mb-6 text-center">Účetnictví, marketing a management</p>
+                        <ul class="text-gray-600 mb-6 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Základy účetnictví a ekonomie</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Marketing a obchodní strategie</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Management a řízení podniku</li>
+                        </ul>
+                        <button class="more-info-btn w-full bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg transition-colors">
+                            Více informací
+                        </button>
+                    </div>
+                    
+                    <div class="program-card bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 transform" data-program-id="electro">
+                        <div class="bg-yellow-500 text-white rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-bolt text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Elektrotechnika</h3>
+                        <p class="text-gray-600 mb-6 text-center">Elektronika, automatizace a robotika</p>
+                        <ul class="text-gray-600 mb-6 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Základy elektroniky</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Automatizace a robotika</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Programování mikrokontrolérů</li>
+                        </ul>
+                        <button class="more-info-btn w-full bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-lg transition-colors">
+                            Více informací
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
