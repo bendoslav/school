@@ -14,8 +14,7 @@
         <nav class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-3">
-                    <img src="school-logo.png" alt="School Logo" class="h-10 w-auto">
-                    <span class="text-xl font-bold text-gray-800">School Name</span>
+                    <img src="logo.jpg" alt="School Logo" class="h-10 w-auto">
                 </div>
 
                 <div class="md:hidden">
@@ -26,14 +25,38 @@
                     </button>
                 </div>
                 
-                <!-- Desktop Menu -->
-                <ul class="hidden md:flex items-center space-x-6">
-                    <li><a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a></li>
-                    <li><a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a></li>
-                    <li><a href="#programs" class="text-gray-600 hover:text-blue-600 transition-colors">Programs</a>
+                <!-- Vylepšený Desktop Menu -->
+                <ul class="hidden md:flex items-center">
+                    <li class="group relative">
+                        <a href="#home" class="px-4 py-2 text-gray-700 font-medium inline-block hover:text-blue-600 transition-colors">
+                            Domů
+                            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-600"></span>
+                        </a>
                     </li>
-                    <li><a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a></li>
-                    <li><a href="#login" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">Login</a></li>
+                    <li class="group relative">
+                        <a href="#about" class="px-4 py-2 text-gray-700 font-medium inline-block hover:text-blue-600 transition-colors">
+                            O škole
+                            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-600"></span>
+                        </a>
+                    </li>
+                    <li class="group relative">
+                        <a href="#programs" class="px-4 py-2 text-gray-700 font-medium inline-block hover:text-blue-600 transition-colors">
+                            Obory
+                            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-600"></span>
+                        </a>
+                    </li>
+                    <li class="group relative">
+                        <a href="#contact" class="px-4 py-2 text-gray-700 font-medium inline-block hover:text-blue-600 transition-colors">
+                            Kontakt
+                            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-600"></span>
+                        </a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="login.html" class="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-2 rounded-md hover:shadow-lg transition-all duration-300 flex items-center">
+                            <i class="fas fa-user-circle mr-2"></i>
+                            Přihlášení
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -42,7 +65,7 @@
     <main>
         <section id="hero" class="relative min-h-screen flex items-center pt-16">
             <!-- Průmyslový obrázek jako pozadí -->
-            <img src="industrial-background.jpg" alt="Průmyslový areál" class="absolute inset-0 w-full h-full object-cover object-center z-0">
+            <img src="main_bg.jpg" alt="Průmyslový areál" class="absolute inset-0 w-full h-full object-cover object-center z-0">
             <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-10"></div>
             
             <div class="container mx-auto px-4 relative z-20">
@@ -53,8 +76,6 @@
                             <span class="absolute -bottom-2 left-0 w-full h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full transform -rotate-1"></span>
                         </span> škola
                     </h1>
-                    
-                    <!-- Odstraněno původní podtržení -->
                     
                     <p class="text-xl text-gray-200 mb-8 max-w-2xl mt-10">
                         Informace k zahájení školního roku 2024/2025. Připravujeme studenty na budoucnost v technických oborech s důrazem na praktické dovednosti a moderní technologie. Naše škola nabízí kvalitní vzdělání s dlouholetou tradicí.
@@ -68,88 +89,405 @@
                 </div>
             </div>
             
-            <!-- Navigační šipky odstraněny -->
-            
             <!-- Vylepšené statistiky -->
-            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-blue-900/90 to-blue-800/90 py-8 z-20">
-                <div class="container mx-auto px-4">
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div class="flex flex-col items-center border-r border-blue-700 last:border-0">
-                            <span class="text-5xl font-bold text-white mb-2">30<span class="text-blue-400">+</span></span>
-                            <div class="h-1 w-12 bg-blue-400 rounded-full mb-3"></div>
-                            <p class="text-white/90 uppercase tracking-wider text-sm font-medium">Let zkušeností</p>
-                        </div>
-                        <div class="flex flex-col items-center border-r border-blue-700 last:border-0">
-                            <span class="text-5xl font-bold text-white mb-2">15<span class="text-blue-400">+</span></span>
-                            <div class="h-1 w-12 bg-blue-400 rounded-full mb-3"></div>
-                            <p class="text-white/90 uppercase tracking-wider text-sm font-medium">Studijních oborů</p>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <span class="text-5xl font-bold text-white mb-2">98<span class="text-blue-400">%</span></span>
-                            <div class="h-1 w-12 bg-blue-400 rounded-full mb-3"></div>
-                            <p class="text-white/90 uppercase tracking-wider text-sm font-medium">Uplatnění absolventů</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <!-- Nahraďte sekci features touto sekcí pro obory -->
-        <section id="programs" class="py-20 bg-white">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-12">Naše studijní obory</h2>
+                <!-- Modernizovaná sekce oborů podle obrázku -->
+                <section id="programs" class="py-20 bg-gray-50">
+                    <div class="container mx-auto px-4">
+                        <h2 class="text-4xl font-bold text-center mb-4">Naše studijní obory</h2>
+                        <p class="text-gray-600 text-center max-w-3xl mx-auto mb-16">Nabízíme širokou škálu vzdělávacích programů
+                            zaměřených na technické a ekonomické obory s důrazem na praktické dovednosti a uplatnění v praxi.</p>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="program-card bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 transform" data-program-id="it">
-                        <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
-                            <i class="fas fa-laptop-code text-2xl"></i>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <!-- 3leté učební obory -->
+                            <div
+                                class="bg-blue-800 rounded-xl overflow-hidden shadow-xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                                <div class="p-8 pb-4">
+                                    <h3 class="text-3xl font-bold text-white mb-2">UČEBNÍ OBORY</h3>
+                                    <h4 class="text-4xl font-extrabold text-blue-300 mb-6">3LETÉ</h4>
+                                </div>
+                
+                                <div class="bg-white bg-opacity-10 h-1 mx-8"></div>
+                
+                                <div class="p-6 pt-4">
+                                    <ul class="space-y-1">
+                                        <li class="group">
+                                            <a href="#elektrikar-silnoproud"
+                                                class="flex items-center text-white py-3 px-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+                                                <i
+                                                    class="fas fa-chevron-right text-blue-300 mr-3 group-hover:translate-x-1 transition-transform"></i>
+                                                <span>ELEKTRIKÁŘ - SILNOPROUD</span>
+                                            </a>
+                                        </li>
+                                        <li class="group">
+                                            <a href="#elektrikar-slaboproud"
+                                                class="flex items-center text-white py-3 px-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+                                                <i
+                                                    class="fas fa-chevron-right text-blue-300 mr-3 group-hover:translate-x-1 transition-transform"></i>
+                                                <span>ELEKTRIKÁŘ - SLABOPROUD</span>
+                                            </a>
+                                        </li>
+                                        <li class="group">
+                                            <a href="#mechanik"
+                                                class="flex items-center text-white py-3 px-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+                                                <i
+                                                    class="fas fa-chevron-right text-blue-300 mr-3 group-hover:translate-x-1 transition-transform"></i>
+                                                <span>MECHANIK OPRAVÁŘ MOTOROVÝCH VOZIDEL (AUTOMECHANIK)</span>
+                                            </a>
+                                        </li>
+                                        <li class="group">
+                                            <a href="#obrabec"
+                                                class="flex items-center text-white py-3 px-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+                                                <i
+                                                    class="fas fa-chevron-right text-blue-300 mr-3 group-hover:translate-x-1 transition-transform"></i>
+                                                <span>OBRÁBĚČ KOVŮ</span>
+                                            </a>
+                                        </li>
+                                        <li class="group">
+                                            <a href="#strojni-mechanik"
+                                                class="flex items-center text-white py-3 px-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+                                                <i
+                                                    class="fas fa-chevron-right text-blue-300 mr-3 group-hover:translate-x-1 transition-transform"></i>
+                                                <span>STROJNÍ MECHANIK (ZÁMEČNÍK)</span>
+                                            </a>
+                                        </li>
+                                        <li class="group">
+                                            <a href="#truhlar"
+                                                class="flex items-center text-white py-3 px-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+                                                <i
+                                                    class="fas fa-chevron-right text-blue-300 mr-3 group-hover:translate-x-1 transition-transform"></i>
+                                                <span>TRUHLÁŘ</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                
+                            <!-- 4leté studijní obory -->
+                            <div
+                                class="bg-teal-700 rounded-xl overflow-hidden shadow-xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                                <div class="p-8 pb-4">
+                                    <h3 class="text-3xl font-bold text-white mb-2">STUDIJNÍ OBORY</h3>
+                                    <h4 class="text-4xl font-extrabold text-teal-300 mb-6">4LETÉ</h4>
+                                </div>
+                
+                                <div class="bg-white bg-opacity-10 h-1 mx-8"></div>
+                
+                                <div class="p-6 pt-4">
+                                    <ul class="space-y-1">
+                                        <li class="group">
+                                            <a href="#ekonomika"
+                                                class="flex items-center text-white py-3 px-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+                                                <i
+                                                    class="fas fa-chevron-right text-teal-300 mr-3 group-hover:translate-x-1 transition-transform"></i>
+                                                <span>EKONOMIKA A PODNIKÁNÍ – ŘÍZENÍ LIDSKÝCH ZDROJŮ</span>
+                                            </a>
+                                        </li>
+                                        <li class="group">
+                                            <a href="#it"
+                                                class="flex items-center text-white py-3 px-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+                                                <i
+                                                    class="fas fa-chevron-right text-teal-300 mr-3 group-hover:translate-x-1 transition-transform"></i>
+                                                <span>INFORMAČNÍ TECHNOLOGIE – PROGRAMÁTOR A VÝVOJÁŘ APLIKACÍ</span>
+                                            </a>
+                                        </li>
+                                        <li class="group">
+                                            <a href="#letecky-mechanik"
+                                                class="flex items-center text-white py-3 px-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+                                                <i
+                                                    class="fas fa-chevron-right text-teal-300 mr-3 group-hover:translate-x-1 transition-transform"></i>
+                                                <span>LETECKÝ MECHANIK</span>
+                                            </a>
+                                        </li>
+                                        <li class="group">
+                                            <a href="#mechanik-elektrotechnik"
+                                                class="flex items-center text-white py-3 px-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+                                                <i
+                                                    class="fas fa-chevron-right text-teal-300 mr-3 group-hover:translate-x-1 transition-transform"></i>
+                                                <span>MECHANIK ELEKTROTECHNIK + ELEKTRIKÁŘ (L0+H)</span>
+                                            </a>
+                                        </li>
+                                        <li class="group">
+                                            <a href="#mechanik-serizovac"
+                                                class="flex items-center text-white py-3 px-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+                                                <i
+                                                    class="fas fa-chevron-right text-teal-300 mr-3 group-hover:translate-x-1 transition-transform"></i>
+                                                <span>MECHANIK SEŘIZOVAČ + OBRÁBĚČ KOVŮ (L0+H)</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                
+                            <!-- Nástavbové studium -->
+                            <div
+                                class="bg-blue-600 rounded-xl overflow-hidden shadow-xl transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                                <div class="p-8 pb-4">
+                                    <h3 class="text-3xl font-bold text-white mb-2">NÁSTAVBOVÉ STUDIUM</h3>
+                                    <h4 class="text-4xl font-extrabold text-blue-200 mb-6">2LETÉ A 3LETÉ</h4>
+                                </div>
+                
+                                <div class="bg-white bg-opacity-10 h-1 mx-8"></div>
+                
+                                <div class="p-6 pt-4">
+                                    <ul class="space-y-1">
+                                        <li class="group">
+                                            <a href="#provozni-technika"
+                                                class="flex items-center text-white py-3 px-2 rounded-lg hover:bg-white hover:bg-opacity-10 transition-all">
+                                                <i
+                                                    class="fas fa-chevron-right text-blue-200 mr-3 group-hover:translate-x-1 transition-transform"></i>
+                                                <span>PROVOZNÍ TECHNIKA</span>
+                                            </a>
+                                        </li>
+                                        <li class="mt-4 pt-4 border-t border-white border-opacity-20">
+                                            <p class="text-white text-opacity-80 px-2">Další obory nástavbového studia budou otevřeny
+                                                podle zájmu studentů.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Informační technologie</h3>
-                        <p class="text-gray-600 mb-6 text-center">Programování, správa sítí a vývoj webových aplikací</p>
-                        <ul class="text-gray-600 mb-6 space-y-2">
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Programování v různých jazycích</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Správa počítačových sítí</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Tvorba webových aplikací</li>
-                        </ul>
-                        <button class="more-info-btn w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg transition-colors">
-                            Více informací
-                        </button>
-                    </div>
-                    
-                    <div class="program-card bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 transform" data-program-id="economics">
-                        <div class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
-                            <i class="fas fa-chart-line text-2xl"></i>
+                
+                        <div class="mt-12 text-center">
+                            <a href="#all-programs"
+                                class="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-800 text-white px-8 py-3 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                                Zobrazit všechny obory
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Ekonomika a podnikání</h3>
-                        <p class="text-gray-600 mb-6 text-center">Účetnictví, marketing a management</p>
-                        <ul class="text-gray-600 mb-6 space-y-2">
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Základy účetnictví a ekonomie</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Marketing a obchodní strategie</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Management a řízení podniku</li>
-                        </ul>
-                        <button class="more-info-btn w-full bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-lg transition-colors">
-                            Více informací
-                        </button>
                     </div>
-                    
-                    <div class="program-card bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 transform" data-program-id="electro">
-                        <div class="bg-yellow-500 text-white rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
-                            <i class="fas fa-bolt text-2xl"></i>
+                </section>
+
+
+                <section id="about" class="py-20 bg-gray-100">
+                    <div class="container mx-auto px-4">
+                        <div class="flex flex-col lg:flex-row items-center gap-12">
+                            <!-- Levá strana - obrázek -->
+                            <div class="lg:w-1/2 relative">
+                                <img src="budova_skoly.jpg" alt="Budova školy"
+                                    class="rounded-xl shadow-lg w-full h-auto object-cover">
+                                <div
+                                    class="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-lg shadow-lg hidden md:block">
+                                    <p class="text-xl font-bold">Založeno 1883</p>
+                                </div>
+                            </div>
+                
+                            <!-- Pravá strana - text -->
+                            <div class="lg:w-1/2">
+                                <h2 class="text-4xl font-bold mb-6 text-gray-800">O naší škole</h2>
+                                <div class="h-1 w-20 bg-blue-600 rounded-full mb-8"></div>
+                
+                                <p class="text-gray-700 mb-6 text-lg">
+                                    Vítkovická střední průmyslová škola je vzdělávací instituce s dlouholetou tradicí, která se zaměřuje
+                                    na přípravu studentů v technických a ekonomických oborech. Naše škola kombinuje teoretické znalosti
+                                    s praktickými dovednostmi, aby připravila absolventy na úspěšnou kariéru v průmyslu a podnikání.
+                                </p>
+                
+                                <p class="text-gray-700 mb-8 text-lg">
+                                    Spolupracujeme s významnými zaměstnavateli v regionu, což našim studentům umožňuje získat cenné
+                                    pracovní zkušenosti již během studia. Naše moderně vybavené učebny a dílny poskytují ideální
+                                    prostředí pro rozvoj praktických dovedností.
+                                </p>
+                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                                    <div class="flex items-start">
+                                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                                            <i class="fas fa-graduation-cap text-blue-600 text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-bold text-gray-800 mb-2">Kvalitní vzdělání</h3>
+                                            <p class="text-gray-600">Zkušení pedagogové a moderní výukové metody</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="flex items-start">
+                                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                                            <i class="fas fa-tools text-blue-600 text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-bold text-gray-800 mb-2">Praktické dovednosti</h3>
+                                            <p class="text-gray-600">Odborné praxe a spolupráce s firmami</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="flex items-start">
+                                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                                            <i class="fas fa-users text-blue-600 text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-bold text-gray-800 mb-2">Individuální přístup</h3>
+                                            <p class="text-gray-600">Menší třídy a osobní přístup ke studentům</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="flex items-start">
+                                        <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                                            <i class="fas fa-briefcase text-blue-600 text-xl"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-bold text-gray-800 mb-2">Uplatnění absolventů</h3>
+                                            <p class="text-gray-600">Vysoká míra zaměstnanosti po ukončení studia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <a href="#more-about"
+                                    class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all transform hover:-translate-y-1">
+                                    Více o škole
+                                    <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Elektrotechnika</h3>
-                        <p class="text-gray-600 mb-6 text-center">Elektronika, automatizace a robotika</p>
-                        <ul class="text-gray-600 mb-6 space-y-2">
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Základy elektroniky</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Automatizace a robotika</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Programování mikrokontrolérů</li>
-                        </ul>
-                        <button class="more-info-btn w-full bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-lg transition-colors">
-                            Více informací
-                        </button>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
+
+              
+                                
+                                <!-- Sekce Kontakt -->
+                                <section id="contact" class="py-20 bg-white">
+                                    <div class="container mx-auto px-4">
+                                        <h2 class="text-4xl font-bold text-center mb-4">Kontaktujte nás</h2>
+                                        <p class="text-gray-600 text-center max-w-3xl mx-auto mb-16">Máte-li jakékoliv dotazy ohledně studia nebo
+                                            přijímacího řízení, neváhejte nás kontaktovat. Rádi vám poskytneme veškeré potřebné informace.</p>
+                                
+                                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                                            <!-- Levá strana - mapa a kontaktní údaje -->
+                                            <div>
+                                                <div class="rounded-xl overflow-hidden shadow-lg mb-8 h-80">
+                                                    <!-- Zde vložte iframe s Google mapou nebo použijte obrázek mapy -->
+                                                    <iframe
+                                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.8536963305196!2d18.2622653!3d49.8234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDQ5JzI0LjQiTiAxOMKwMTUnNDQuMiJF!5e0!3m2!1scs!2scz!4v1623456789012!5m2!1scs!2scz"
+                                                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                                </div>
+                                
+                                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                                                        <div class="flex items-center mb-4">
+                                                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                                            </div>
+                                                            <h3 class="font-bold text-lg">Adresa</h3>
+                                                        </div>
+                                                        <p class="text-gray-700">Zengrova 1, 703 00</p>
+                                                        <p class="text-gray-700">Ostrava-Vítkovice</p>
+                                                    </div>
+                                
+                                                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                                                        <div class="flex items-center mb-4">
+                                                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                                                <i class="fas fa-phone-alt text-blue-600"></i>
+                                                            </div>
+                                                            <h3 class="font-bold text-lg">Telefon</h3>
+                                                        </div>
+                                                        <a href="tel:+420595700111" class="text-gray-700 hover:text-blue-600 transition-colors flex items-center group" title="Kliknutím zahájíte hovor">
+                                                            <span>+420 595 700 111</span>
+                                                            <span class="ml-2 text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Klikněte pro volání</span>
+                                                        </a>
+                                                        <a href="tel:+420595700112" class="text-gray-700 hover:text-blue-600 transition-colors flex items-center group mt-2" title="Kliknutím zahájíte hovor">
+                                                            <span>+420 595 700 112</span>
+                                                            <span class="ml-2 text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Klikněte pro volání</span>
+                                                        </a>
+                                                        <p class="text-xs text-gray-500 mt-3 italic">Po kliknutí na telefonní číslo bude zahájen hovor prostřednictvím vašeho zařízení</p>
+                                                    </div>
+                                
+                                                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                                                        <div class="flex items-center mb-4">
+                                                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                                                <i class="fas fa-envelope text-blue-600"></i>
+                                                            </div>
+                                                            <h3 class="font-bold text-lg">Email</h3>
+                                                        </div>
+                                                        <p class="text-gray-700">info@vitkovice.cz</p>
+                                                        <p class="text-gray-700">studijni@vitkovice.cz</p>
+                                                    </div>
+                                
+                                                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                                                        <div class="flex items-center mb-4">
+                                                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                                                <i class="fas fa-clock text-blue-600"></i>
+                                                            </div>
+                                                            <h3 class="font-bold text-lg">Úřední hodiny</h3>
+                                                        </div>
+                                                        <p class="text-gray-700">Po-Pá: 8:00 - 15:00</p>
+                                                        <p class="text-gray-700">So-Ne: Zavřeno</p>
+                                                    </div>
+                                                </div>
+                                
+                                                <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                                                    <a href="#"
+                                                        class="bg-blue-600 hover:bg-blue-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                    <a href="#"
+                                                        class="bg-blue-400 hover:bg-blue-500 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                    <a href="#"
+                                                        class="bg-pink-600 hover:bg-pink-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                    <a href="#"
+                                                        class="bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                                                        <i class="fab fa-youtube"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                
+                                            <!-- Pravá strana - kontaktní formulář -->
+                                            <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                                                <h3 class="text-2xl font-bold mb-6">Napište nám</h3>
+                                
+                                                <form>
+                                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                                        <div>
+                                                            <label for="name" class="block text-gray-700 font-medium mb-2">Jméno a příjmení</label>
+                                                            <input type="text" id="name" name="name"
+                                                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                                                placeholder="Vaše jméno">
+                                                        </div>
+                                
+                                                        <div>
+                                                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                                            <input type="email" id="email" name="email"
+                                                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                                                placeholder="vas@email.cz">
+                                                        </div>
+                                                    </div>
+                                
+                                                    <div class="mb-6">
+                                                        <label for="subject" class="block text-gray-700 font-medium mb-2">Předmět</label>
+                                                        <input type="text" id="subject" name="subject"
+                                                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                                            placeholder="Předmět zprávy">
+                                                    </div>
+                                
+                                                    <div class="mb-6">
+                                                        <label for="message" class="block text-gray-700 font-medium mb-2">Zpráva</label>
+                                                        <textarea id="message" name="message" rows="5"
+                                                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                                            placeholder="Vaše zpráva..."></textarea>
+                                                    </div>
+                                
+                                                    <div class="mb-6">
+                                                        <label class="flex items-center">
+                                                            <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600">
+                                                            <span class="ml-2 text-gray-700">Souhlasím se zpracováním osobních údajů</span>
+                                                        </label>
+                                                    </div>
+                                
+                                                    <button type="submit"
+                                                        class="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-all transform hover:-translate-y-1">
+                                                        Odeslat zprávu
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            
+
     </main>
 
 

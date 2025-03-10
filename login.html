@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přihlášení - Vítkovická střední průmyslová škola</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-gray-50">
+    <header class="fixed w-full top-0 z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <a href="index.html">
+                        <img src="logo.jpg" alt="School Logo" class="h-10 w-auto">
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="p-2 focus:outline-none">
+                        <div class="w-6 h-0.5 bg-gray-600 mb-1.5 transition-all"></div>
+                        <div class="w-6 h-0.5 bg-gray-600 mb-1.5 transition-all"></div>
+                        <div class="w-6 h-0.5 bg-gray-600 transition-all"></div>
+                    </button>
+                </div>
+                
+                <!-- Vylepšený Desktop Menu -->
+                <ul class="hidden md:flex items-center">
+                    <li class="group relative">
+                        <a href="index.html" class="px-4 py-2 text-gray-700 font-medium inline-block hover:text-blue-600 transition-colors">
+                            Domů
+                            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-600"></span>
+                        </a>
+                    </li>
+                    <li class="group relative">
+                        <a href="index.html#about" class="px-4 py-2 text-gray-700 font-medium inline-block hover:text-blue-600 transition-colors">
+                            O škole
+                            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-600"></span>
+                        </a>
+                    </li>
+                    <li class="group relative">
+                        <a href="index.html#programs" class="px-4 py-2 text-gray-700 font-medium inline-block hover:text-blue-600 transition-colors">
+                            Obory
+                            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-600"></span>
+                        </a>
+                    </li>
+                    <li class="group relative">
+                        <a href="index.html#contact" class="px-4 py-2 text-gray-700 font-medium inline-block hover:text-blue-600 transition-colors">
+                            Kontakt
+                            <span class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-blue-600"></span>
+                        </a>
+                    </li>
+                    <li class="ml-4">
+                        <a href="login.html" class="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-2 rounded-md hover:shadow-lg transition-all duration-300 flex items-center">
+                            <i class="fas fa-user-circle mr-2"></i>
+                            Přihlášení
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-24 pb-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="bg-gradient-to-r from-blue-600 to-blue-800 p-6">
+                    <h1 class="text-2xl font-bold text-white text-center">Přihlášení do systému</h1>
+                </div>
+                
+                <div class="p-8">
+                    <div class="flex justify-center mb-8">
+                        <div class="bg-blue-100 rounded-full p-4">
+                            <i class="fas fa-user-lock text-blue-600 text-3xl"></i>
+                        </div>
+                    </div>
+                    
+                    <form>
+                        <div class="mb-6">
+                            <label for="username" class="block text-gray-700 font-medium mb-2">Uživatelské jméno</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <i class="fas fa-user text-gray-400"></i>
+                                </div>
+                                <input type="text" id="username" name="username" 
+                                    class="w-full pl-10 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" 
+                                    placeholder="Zadejte uživatelské jméno">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="password" class="block text-gray-700 font-medium mb-2">Heslo</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <i class="fas fa-lock text-gray-400"></i>
+                                </div>
+                                <input type="password" id="password" name="password" 
+                                    class="w-full pl-10 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" 
+                                    placeholder="Zadejte heslo">
+                                <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                                    <button type="button" id="toggle-password" class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-6">
+                            <label class="flex items-center cursor-pointer group">
+                                <div class="relative">
+                                    <input type="checkbox" class="sr-only">
+                                    <div class="w-5 h-5 bg-gray-200 rounded border border-gray-300 group-hover:border-blue-500 transition-colors"></div>
+                                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity">
+                                        <i class="fas fa-check text-blue-600 text-xs"></i>
+                                    </div>
+                                </div>
+                                <span class="ml-2 text-gray-700 group-hover:text-blue-600 transition-colors">Zapamatovat si mě</span>
+                            </label>
+                            <a href="#" class="text-sm text-blue-600 hover:text-blue-800 relative group">
+                                <span>Zapomenuté heslo?</span>
+                                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
+                            </a>
+                        </div>
+                        
+                        <button type="submit" 
+                            class="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-all transform hover:-translate-y-1">
+                            Přihlásit se
+                        </button>
+                    </form>
+                    
+                    <div class="mt-8 text-center">
+                        <p class="text-gray-600">Nemáte účet? <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline">Registrujte se</a></p>
+                    </div>
+                    
+                    <div class="mt-8 pt-6 border-t border-gray-200">
+                        <p class="text-center text-gray-600 mb-4">Nebo se přihlaste pomocí</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="#" class="bg-black hover:bg-gray-800 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                                <i class="fab fa-apple"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+       
+
+    <script>
+        // Toggle password visibility
+        document.getElementById('toggle-password').addEventListener('click', function() {
+            const passwordInput = document.getElementById('password');
+            const icon = this.querySelector('i');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        });
+    </script>
+</body>
+
+</html>
